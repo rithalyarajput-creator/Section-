@@ -8,6 +8,7 @@ A growing collection of reusable UI sections — each section lives in its own f
 |---|---|
 | [product-card](./product-card/) | Glass product card with wishlist button, image hover swap, INR price, Add to Cart |
 | [add-to-cart](./add-to-cart/) | Horizontal product card with quantity controls, live price update, stock badge |
+| [blog-card](./blog-card/) | Glass blog card with image fade, neumorphic buttons, date, Read More |
 
 ---
 
@@ -22,15 +23,9 @@ Each section folder has its own `README.md` with full usage instructions.
 
 ---
 
-## Sections Coming Soon
-
-More sections will be added here as they are built.
-
----
-
 ## Tech Stack
 
 All sections are built with:
 - **HTML5** — semantic markup
-- **CSS3** — flexbox, glassmorphism, animations, transitions
+- **CSS3** — flexbox, glassmorphism, neumorphism, animations, transitions
 - **Vanilla JavaScript** — no frameworks, no dependencies

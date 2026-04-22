@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(ellipse at 10% 15%, rgba(100,120,255,0.55) 0%, transparent 40%),
+    radial-gradient(ellipse at 55% 10%, rgba(220,100,255,0.55) 0%, transparent 40%),
+    radial-gradient(ellipse at 15% 80%, rgba(255,180,100,0.55) 0%, transparent 40%),
+    radial-gradient(ellipse at 90% 60%, rgba(255,220,200,0.40) 0%, transparent 40%),
+    #e8e4ef;
+}
+
+/* ── CARD ── */
+.login-card {
+  width: 360px;
+  padding: 40px 32px 36px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.60);
+  box-shadow:
+    0 20px 60px rgba(180,160,220,0.18),
+    0 4px 16px rgba(0,0,0,0.07),
+    inset 0 1px 0 rgba(255,255,255,0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ── LOGO ── */
+.logo-wrap {
+  margin-bottom: 36px;
+}
+
+.logo-circle {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f0eef5, #ddd8e8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    8px 8px 18px rgba(180,170,210,0.45),
+    -6px -6px 14px rgba(255,255,255,0.90),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* ── INPUTS ── */
+.fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.input-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrap input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #555;
+  background: linear-gradient(145deg, #ddd8e8, #f0eef5);
+  box-shadow:
+    inset 4px 4px 10px rgba(180,170,210,0.50),
+    inset -3px -3px 8px rgba(255,255,255,0.85);
+  transition: box-shadow 0.2s ease;
+}
+
+.input-wrap input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.input-wrap input:focus {
+  box-shadow:
+    inset 5px 5px 12px rgba(160,150,200,0.55),
+    inset -3px -3px 8px rgba(255,255,255,0.85),
+    0 0 0 2px rgba(180,140,230,0.25);
+}
+
+/* password input padding for eye icon */
+#password { padding-right: 50px; }
+
+.eye-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.eye-btn:hover { color: #888; }
+
+/* ── LOGIN BUTTON ── */
+.login-btn {
+  width: 65%;
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background: linear-gradient(145deg, #f0eef5, #ddd8e8);
+  box-shadow:
+    6px 6px 14px rgba(180,170,210,0.45),
+    -5px -5px 12px rgba(255,255,255,0.90),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  margin-bottom: 24px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  letter-spacing: 0.3px;
+}
+
+.login-btn:hover {
+  box-shadow:
+    8px 8px 18px rgba(180,170,210,0.50),
+    -6px -6px 14px rgba(255,255,255,0.95),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  transform: translateY(-1px);
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+  box-shadow:
+    2px 2px 6px rgba(180,170,210,0.40),
+    -2px -2px 5px rgba(255,255,255,0.80),
+    inset 3px 3px 8px rgba(180,170,210,0.40),
+    inset -2px -2px 5px rgba(255,255,255,0.75);
+}
+
+/* ── FOOTER ── */
+.footer-text {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.signup-link {
+  color: #555;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signup-link:hover { color: #222; }
